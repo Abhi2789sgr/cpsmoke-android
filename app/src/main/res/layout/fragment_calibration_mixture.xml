@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CalibrationMixtureFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIXTURE CALIBRATION"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resent Value :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@id/co2_resent_value1"
+            app:layout_constraintStart_toStartOf="@id/co2_resent_value1"
+            app:layout_constraintBottom_toTopOf="@id/co2_resent_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value To Set :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@id/co2_set_value1"
+            app:layout_constraintStart_toStartOf="@id/co2_set_value1"
+            app:layout_constraintBottom_toTopOf="@id/co2_set_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <!--/////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/co_text_mix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/co_resent_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co_resent_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <TextView
+            android:id="@+id/co_resent_value1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/co2_resent_value1"
+            app:layout_constraintTop_toTopOf="@id/co2_resent_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_resent_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+
+        <EditText
+            android:id="@+id/co_set_value1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.7"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/co2_set_value1"
+            app:layout_constraintTop_toTopOf="@id/co2_set_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_set_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <!--/////////////////////////////////////////////-->
+
+
+        <TextView
+            android:id="@+id/hc_text_mix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HC :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/hc_resent_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_resent_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <TextView
+            android:id="@+id/hc_resent_value1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ppm-Hex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/co2_resent_value1"
+            app:layout_constraintTop_toTopOf="@id/co2_resent_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_resent_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+
+        <EditText
+            android:id="@+id/co2_set_value1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.7"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ppm-Hex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/co2_set_value1"
+            app:layout_constraintTop_toTopOf="@id/co2_set_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_set_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <!--        ////////////////////-->
+
+        <!--/////////////////////////////////////////////-->
+
+
+        <TextView
+            android:id="@+id/hc_text_mix"
+            android:layout_width="56dp"
+            android:layout_height="39dp"
+            android:text="HC :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@id/co2_resent_value1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/co2_resent_value1" />
+
+        <TextView
+            android:id="@+id/co2_resent_value1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ppm-Hex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/co2_resent_value1"
+            app:layout_constraintTop_toTopOf="@id/co2_resent_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_resent_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+
+        <EditText
+            android:id="@+id/co2_set_value1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.7"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ppm-Hex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/co2_set_value1"
+            app:layout_constraintTop_toTopOf="@id/co2_set_value1"
+            app:layout_constraintBottom_toBottomOf="@id/co2_set_value1"
+            app:layout_constraintHorizontal_bias="0.05"/>
+
+        <!--        ////////////////////-->
+
+
+        <Button
+            android:id="@+id/back_mixture_btn"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:background="#FF0000"
+            android:text="BACK"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintHorizontal_bias="0.2"/>
+
+
+        <Button
+            android:id="@+id/calibrate_mixture_btn"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:background="@color/appGreen"
+            android:text="Calibrate"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintHorizontal_bias="0.8"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

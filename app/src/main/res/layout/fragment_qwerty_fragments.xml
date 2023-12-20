@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.QwertyFragments">
+    <ImageView
+        android:id="@+id/back_qwerty"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/left_arrow_blue_cricled"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/textqwerty"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"
+        android:hint="Enter Here"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/qwerty_enter_btn"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:background="@color/appGreen"
+        android:text="ENTER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="250dp" />
+
+</FrameLayout>
